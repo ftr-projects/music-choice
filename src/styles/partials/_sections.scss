@@ -1,3 +1,23 @@
+.bg-section, .section {
+  &.marigold {
+    background-color: $marigold;
+    color: $navy;
+  }
+
+  &.aqua {
+    background-color: $aqua;
+    color: $navy;
+  }
+}
+
+.section {
+  padding: 20px 0;
+  @media only screen and (min-width: $screen-md) {
+    padding: 50px 0;
+  }
+
+}
+
 .bg-section {
   background-repeat: no-repeat;
   background-position: center left;
@@ -9,6 +29,8 @@
     padding: 80px 0;
     min-height: 300px;
   }
+
+
 
   h2, h3, h4 {
     color: $navy;

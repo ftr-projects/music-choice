@@ -5,8 +5,15 @@ $red:  #d9272d;
 $red-hover: #ca242a;
 $navbar-bg: #e1e3e4;
 
-$title-family: "nexa heavy", "avinir next", "avinir", sans-serif;
-$font-size: 18px;
+
+// fonts
+
+$nexaheavy: "nexa heavy", "avenir heavy", "avenir", arial, helvetica, sans-serif;
+// $nexaxbold: "nexa heavy", "avenir heavy", "avenir", sans-serif;
+$nexa: "nexa", "avenir", arial, helvetica, sans-serif;
+
+$title-family: $nexaheavy;
+$font-size: 19px;
 $font-size-title: 32px;
 
 $screen-xs: 480px;

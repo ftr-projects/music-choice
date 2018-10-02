@@ -1,69 +1,105 @@
-.hero-component {
-  .wrapper-hero {
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-    padding: 140px 0;
+#hero-component {
 
-    &.aqua {
-      background-color: $aqua;
-      color: $white;
+  .wrapper {
+    background-color: $red-new;
+    color: $navy;
+    margin: 0;
+    padding: 60px 0;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+
+    @media only screen and (min-width: $screen-sm) {
+      padding: 120px 0;
     }
 
-    &.red {
-      background-color: $red-new;
-      color: $white;
+    @media only screen and (min-width: $screen-md) {
+      padding: 120px 0;
+      text-align: left;
+    }
+
+    .exclamation {
+      height: auto;
+      left: 20px;
+      position: absolute;
+      top: -70px;
+      width: 70px;
+      z-index: -1;
+
+      @media only screen and (min-width: $screen-sm) {
+        left: 10px;
+        top: -140px;
+        width: 105px;
+      }
+    }
+
+
+  }
+
+  h2 {
+    font-size: 29px;
+    font-family: $nexa;
+    margin: 0;
+    color: $white;
+
+    @media only screen and (min-width: $screen-sm) {
+      font-size: 30px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      margin-left: 100px;
+      margin-bottom: 0;
+      font-size: 30px;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      font-size: 32px;
     }
   }
 
   h1 {
     color: $navy;
-    font-family: "nexa black";
-    font-size: 30px;
-    margin: 0;
-    padding-left: 40px;
-    text-align: center;
-    text-indent:-40px;
+    font-family: $nexaheavy;
+    font-size: 36px;
+
+      margin: 0 0 10px 0;
 
     @media only screen and (min-width: $screen-sm) {
       font-size: 44px;
-      text-align: left;
+      font-family: "nexa black";
+      margin-left: 0;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: 52px;
+
+      margin-left: 40px;
     }
 
     @media only screen and (min-width: $screen-lg) {
-      font-size: 50px;
+      font-size: 52px;
+
     }
 
   }
-
-  h3 {
-    font-family: "nexa xbold";
-    font-size: 32px;
-    padding-left: 60px;
-    text-indent: -60px;
-  }
-
 }
+
 
 .exclamation {
-  h1, h2, h3, h4, h5, h6, img, p, {
-    position: relative;
-    margin-left: 60px;
-  }
-  &:before {
-    content: "!";
-    font-weight: 700;
-    color: #fff;
-    font-size: 350px;
-    left: 0;
-    position: absolute;
-    top: -290px;
-    display: block;
-    z-index: 0;
-  }
-}
+      height: auto;
+      left: 20px;
+      position: absolute;
+      top: -70px;
+      width: 35px;
+      z-index: -1;
 
-
+      @media only screen and (min-width: $screen-sm) {
+        left: 10px;
+        top: -140px;
+        width: 65px;
+      }
+    }
 
 // .price-offer-title-sweetener {
 //   display: flex;
